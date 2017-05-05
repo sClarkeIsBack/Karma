@@ -1,0 +1,14 @@
+<settings>
+<category label="Login Credentials">
+     <setting id="Username" type="text" label="Username" default=""/>
+     <setting id="Password" type="text" option="writeable,hidden" label="Password" default=""/>
+</category>
+<category label="Parental Lock">
+	 <setting id="xxx" type="bool" label="Enable Parental Lock" default="true"/>
+	 <setting id="Pin" type="text" option="writeable,hidden" label="Pin: " default="1234" enable="!eq(-1,false)"/>
+</category>
+<category label="Miscellaneous">
+	<setting visible="true" label="Setup TV Guide" type="action" action="RunPlugin(plugin://plugin.video.karmatv/?mode=9&url=PVR)"/>
+	<setting visible="true" label="Clear Cache" type="action" action="RunPlugin(plugin://plugin.video.karmatv/?mode=9&url=CC)"/>
+</category>
+</settings>

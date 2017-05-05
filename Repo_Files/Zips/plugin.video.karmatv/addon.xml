@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.karmatv"
+       name="[COLOR red][B]Karma Tv[/B][/COLOR]"
+       version="1.0"
+       provider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Tv, Adult, Kids, Movies, News, Sports</summary>
+    <description lang="en">Karma Tv is not affiliated with Kodi/Spmc, nor do we host or stream any sources</description>
+     <platform>all</platform>
+  </extension>
+</addon>
