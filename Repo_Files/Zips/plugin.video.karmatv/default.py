@@ -76,8 +76,13 @@ def livecategory(url):
 	for a in all_cats:
 		name = regex_from_to(a,'<title>','</title>')
 		name = base64.b64decode(name)
+		
 		url1  = regex_from_to(a,'<playlist_url>','</playlist_url>').replace('<![CDATA[','').replace(']]>','')
-		addDir(name,url1,2,icon,fanart,'')
+		
+		a = 'FRENCH', 'BALKANS', 'FILIPINO','HAITIAN','PORTUGUESE','ISRAEL','ITALIAN','AFGHAN/PERSIAN','ARABIC','GREEK','CHINESE','VIETNAMESE','HINDI','PUNJABI','URDU','SOUTH INDIAN','BANGLA','AFRICAN','POLISH','HATIAN','SPANISH'
+		if not any(s in name for s in a):
+		
+			addDir(name,url1,2,icon,fanart,'')
 		
 def Livelist(url,name):
 	a = 'XXX', 'Adult', 'Adults','ADULT','FOR ADULTS','adult','adults','Porn','PORN','porn','Porn','xxx','Playboy'
