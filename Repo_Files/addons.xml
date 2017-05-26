@@ -18,5 +18,25 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.716iptv"
+       name="[COLOR white]716IPTV[/COLOR]"
+       version="1.4"
+       provider-name="716IPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR white]716IPTV[/COLOR]</summary>
+    <language>en</language>
+    <description lang="en">716IPTV- Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 
 </addons>
