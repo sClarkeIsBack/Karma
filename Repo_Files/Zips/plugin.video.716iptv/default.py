@@ -83,7 +83,9 @@ def livecategory(url):
 		name = tools.regex_from_to(a,'<title>','</title>')
 		name = base64.b64decode(name)
 		url1  = tools.regex_from_to(a,'<playlist_url>','</playlist_url>').replace('<![CDATA[','').replace(']]>','')
-		tools.addDir(name,url1,2,icon,fanart,'')
+		a = 'POLISH', 'FRENCH', 'Portuguse/Brazilian','Australian','AFRICAN','Russian','GERMAN','MEXICAN','LIVE WORLD CAMS','INDIAN/PAKISTANI','INTERNATIONAL','ITALIAN','LATINO','GREEK','DANISH','Spanish','BONUS... subject to change','OSN','ARABIC'
+		if not any(s in name for s in a):
+			tools.addDir(name,url1,2,icon,fanart,'')
 		
 def Livelist(url):
 	open = tools.OPEN_URL(url)

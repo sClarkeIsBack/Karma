@@ -20,7 +20,7 @@
 
 <addon id="plugin.video.716iptv"
        name="[COLOR white]716IPTV[/COLOR]"
-       version="1.4"
+       version="1.5"
        provider-name="716IPTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
