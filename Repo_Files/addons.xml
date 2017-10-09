@@ -18,6 +18,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.karma2"
+       name="Karma 2"
+       version="1.0"
+       provider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Karma 2</summary>
+    <language>en</language>
+    <description lang="en">Karma 2 Official Addon - Supplier of Great Quality and Stable Streams</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.716iptv"
        name="[COLOR white]716IPTV[/COLOR]"
        version="1.5"
